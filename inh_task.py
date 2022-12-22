@@ -12,8 +12,11 @@
 
 
 class Soldier:
-    pass
 
+    unique_num: int
+    command: str
 
 class Hero:
-    pass
+
+    unique_num: int
+    command: str
