@@ -25,3 +25,10 @@ class Soldier:
 
     def go_to_hero(self, some_hero: Hero):
         pass
+
+
+white_hero = Hero()
+black_hero = Hero()
+
+white_command = []
+black_command = []
