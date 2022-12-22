@@ -15,6 +15,9 @@ class Hero:
     unique_num: int
     command: str
 
+    def increase_level(self):
+        pass
+
 class Soldier:
 
     unique_num: int
