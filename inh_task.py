@@ -10,13 +10,15 @@
 # Отправьте одного из солдат первого героя следовать за ним.
 # Выведите на экран идентификационные номера этих двух юнитов.
 
+class Hero:
+
+    unique_num: int
+    command: str
 
 class Soldier:
 
     unique_num: int
     command: str
 
-class Hero:
-
-    unique_num: int
-    command: str
+    def go_to_hero(self, some_hero: Hero):
+        pass
