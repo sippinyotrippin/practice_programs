@@ -5,7 +5,7 @@ class Node:
 
 
 def stringify(linkedlist, result=()):
-    if linkedlist is None or (linkedlist.data is None and linkedlist.next is None):
+    if linkedlist is None or linkedlist.data is None:
         result = list(result)
         result.append('None')
         return ' -> '.join(result)
@@ -13,11 +13,8 @@ def stringify(linkedlist, result=()):
     else:
         result = list(result)
         result.append(str(linkedlist.data))
-        if linkedlist.next is not None:
-            return stringify(linkedlist.next, tuple(result))
-        else:
-            return stringify(Node(None), tuple(result))
+        return stringify(linkedlist.next, tuple(result))
 
 
-linked_list = Node(1, Node(2, Node(3, Node(4))))
+linked_list = Node(None)
 print(stringify(linked_list))
