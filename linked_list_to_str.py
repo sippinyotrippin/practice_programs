@@ -21,7 +21,3 @@ def stringify(linkedlist, result=()):
 
 linked_list = Node(None)
 print(stringify(linked_list))
-
-
-
-
