@@ -19,5 +19,5 @@ def stringify(linkedlist, result=()):
             return stringify(Node(None), tuple(result))
 
 
-linked_list = Node(None)
+linked_list = Node(1, Node(2, Node(3, Node(4))))
 print(stringify(linked_list))
